@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Employés</title>
+</head>
+<body>
+    <h2>Liste des Employés</h2>
+    <ul>
+        <c:forEach var="employee" items="${employees}">
+            <li>${employee.name}</li>
+        </c:forEach>
+    </ul>
+    <a href="${pageContext.request.contextPath}/home">Retour à l'accueil</a>
+</body>
+</html>
